@@ -6,9 +6,9 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>You</personname>
-      <department>Your department</department>
-      <institution>Your institution</institution>
+      <personname>Sam Macdonald</personname>
+      <department>Department of Mathematics</department>
+      <institution>University of Nebraska -- Lincoln</institution>
     </author>
     <date>
       <today />
@@ -16,17 +16,248 @@
   </titlepage>
 
   <colophon>
-
     <website>
-      <url href="https://pretextbook.org">My Website</url>
+      <url href="https://smakdonald.github.io/index.html" visual="">smakdonald.github</url>
     </website>
 
     <copyright>
       <year>2020<ndash />2023</year>
-      <holder>You</holder>
-      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+      <holder>Sam Macdonald</holder>
+      <shortlicense> 
+        This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
       </shortlicense>
     </copyright>
   </colophon>
+
+  <acknowledgement>
+    <p>
+      The content of this text is heavily based on the 817-818 sequence of courses offered in UNL, specificlly those taught during the 2021 and 2022 academic years. 
+      As such, the content and structure have been heavily based on the notes of the following faculty:
+      <ul>
+        <li>
+          <p>
+            <url href="https://eloisagrifo.github.io/" visual="">Eloísa Grifo</url>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <url href="https://aseceleanu.github.io/" visual="">Alexandra Seceleanu</url>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Mark Walker
+            <fn>Mark has somehow managed to be the only member of the mathematics faculty to not have so much as a single page on the UNL website.</fn>
+          </p>
+        </li>
+      </ul>
+      I am very thankful to Eloísa, Alexandra, and Mark for sharing their <em>.tex</em> files with me.
+      Additionally, a big thanks to Julia Courtney, Nick White, and Cleve Young for the qual problem solutions that they supplied.
+    </p>
+
+    <p>
+      And, as always, I reserve a speical thank you for <url href="https://sites.google.com/willamette.edu/emcnicholas/home" visual="">Erin McNicholas</url> and <url href="https://willamette.edu/undergraduate/math/faculty/johnson/index.html" visual="">Inga Johnson</url> for forever tinting the world of mathematics purple.
+    </p>
+
+    <paragraphs><title>Supplementary / Source Material</title>
+      <p>
+        <ul>
+            <li>
+              <p>
+                <url href="https://github.com/aseceleanu/aseceleanu2.github.io/blob/main/teaching/817-818Notes.pdf" visual="">Alexandra Seceleanu's Algebra Lecture Notes</url>
+              </p>
+            </li>
+
+          <li>
+            <p>
+              <url href="https://eloisagrifo.github.io/Teaching/818/index.html" visual="">Eloísa Grifo's 818 Lecture Notes</url>
+            </p>
+          </li>
+        </ul>
+      </p>  
+    </paragraphs>
+
+  </acknowledgement>
+
+  <preface><title>How to Use This Book</title>
+    <p>
+      I'm still in the process of figuring out exactly what this text is for. 
+      Some possibilities include:
+      <ul>
+        <li>
+          <p>
+            Future lecture notes for the hopeful possibility that one day I will teach a course over this material.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Current notes for students taking the first year algebra sequence. 
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Assistance in studying for the Algebra Qualifying Exam at UNL.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Clout.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <paragraphs><title>Blocks</title>
+      <p>
+        Here are the types of environments you are likely to encounter throughout the text and what they are used for.
+        <ul>
+          <li><title><term>Definition</term></title>
+            <p></p>
+            <p>
+              The building blocks of what we'll be working with. 
+            </p>
+          </li>
+
+          <li><title><term>Examples</term></title>
+            <p></p>
+            <p>
+              Specific instances of a definition.
+              For example, the empty set, <m>\emptyset</m> is an example of a set, and thus would be contained within an <q>example</q> environment.
+              <fn>See: <xref ref="ex-empty-set"/>.</fn>
+              At some point the line between example and definition becomes incoherently blurred, but I have done my best to keep things consistent.
+            </p>
+          </li>
+
+          <li><title><term>Theorem</term></title>
+            <p></p>
+            <p>
+              A result.
+            </p>
+          </li>
+
+          <li><title><term>Lemma</term></title>
+            <p></p>
+            <p>
+              A true mathematical statement that was proven mainly to help in the proof of some theorem. 
+            </p>
+          </li>
+
+          <li><title><term>Corollary</term></title>
+            <p></p>
+            <p>
+              An important result whose proof comes directly from a previous theorem.
+            </p>
+          </li>
+
+          <li><title><term>Proposition</term></title>
+            <p></p>
+            <p>
+              Results that require proof but are more specific and/or contained in a larger result coming later.
+            </p>
+          </li>
+
+          <li><title><term>Exercise</term></title>
+            <p></p>
+            <p>
+              Generalizations, specifics, smaller results, things are are less essential to the course or results who's proofs are usually skipped.
+            </p>
+          </li>
+
+          <li><title><term>Problem</term></title>
+            <p></p>
+            <p>
+              Used for qualifying exam problems.
+            </p>
+          </li>
+
+          <li><title><term>Remark</term></title>
+            <p></p>
+            <p>
+              Providing context in the form of foreshadowing or content not covered in this text.
+              In general, there shouldn't be anything defined in a remark, they should be entirely optional. 
+            </p>
+          </li>
+
+          <li><title><term>Discussion</term></title>
+            <p></p>
+            <p>
+              Usually for arguing about notation.
+            </p>
+          </li>
+
+          <li><title><term>Footnotes</term></title>
+            <p></p>
+            <p>
+              Sometimes act like remarks. 
+              However, most are strictly for fun and add little to no educational value, at least in the traditional sense.
+              <fn>It should really be <q>feetnote</q> if you think about it.</fn>
+            </p>
+          </li>
+        </ul>
+      </p>
+      
+    </paragraphs>
+
+    <paragraphs><title>Don't Forget the Index!</title>
+      <p>
+        This text (and algebra in general) contains an otherworldly amount of definitions and notation, it can sometimes be overwhelming keeping track of it all, and that's okay!
+        The <xref ref="index"/> is here to help; it contains a comprehensive list of all the terms and notation used here, as well as where to find their definition / first usage in the text.
+        Use it, it's here for you!
+      </p>
+    </paragraphs>
+
+  </preface>
+
+  <preface><title>The Structure of this Text</title>
+    
+    <paragraphs><title>Additions</title>
+      <p>
+        <ul>
+          <li>
+            <p>
+              Solvable Groups:
+              Justification pending
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Group Rings:
+              Used to rigorously define polynomial rings, used in many advanced forms of mathematics, such as representation theory, (co)homology, etc
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Noetherian Rings:
+              Better to include in the ring section, since we'll need them when we classify finitely generated modules in PIDs anyway.
+              Since much of commutative algebra is based in noetherian rings, the earlier the exposure the better.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Localization: 
+              Justification pending
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Algebras:
+              Justification pending
+            </p>
+          </li>
+
+        </ul>
+      </p>
+    </paragraphs>
+
+  </preface>
 </frontmatter>
 
